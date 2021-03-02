@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Risque';
+    src: url('Fonts/Risque-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montez';
+    src: url('Fonts/Montez-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Risque;
+}
+
+body {
+    background: url(Images/Events-Images/Body\ Background\ Image.jpg);
+}
+
+
+/* Logo Navbar Section */
+
+.LogoNavbar {
+    background-color: #000  !important;
+}
+
+
+/* Navbar Section */
+
+
+.navbar {
+    background-color: #000;
+    /* background-color: #cc9e2b; */
+    opacity: 0.9;
+}
+
+.nav-link{
+    color: #be9c43  !important;
+    /* color: #000  !important; */
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: #daa726 !important;
+    font-size: 20px;
+    outline: 1px solid #daa726;
+    /* outline: 1px solid #000; */
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border-radius: 16px 0px  !important;
+    padding: 5px;
+    border-bottom: 8px solid #be9c43;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block  !important;
+}
+
+.dropdown-item {
+    color: #be9c43  !important;
+    font-size: 20px;
+}
+
+.dropdown-item:hover {
+    background-color: black  !important;
+    color: grey  !important;
+}
+
+.dropdown-menu a:focus {
+    background-color: black  !important;
+}
+
+
+
+/* Events Gallery Section */
+
+
+.EventsGallerySection {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.EventsGallerySection-Heading h1{
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .EventsGallerySection-Heading h1 {
+        font-size: 45px;
+    }
+}
+
+.EventsGallerySection-Heading span{
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.EventsGallerySection-Heading h3{
+    font-family: 'Risque';
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+.EventsGallerySection-Row1, 
+.EventsGallerySection-Row2, 
+.EventsGallerySection-Row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Image {
+    width: 280px  !important;
+    height: 230px  !important;
+}
+
+.EventsGalleryImage {
+    padding: 10px;
+}
+
+@media only screen and (max-width:620px){
+    .Image {
+        width: 300px  !important;
+        height: 250px  !important;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .Image {
+        width: 220px  !important;
+        height: 170px  !important;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+/* Footer Section */
+
+.FooterSection{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.FooterSection-Text p{
+    color: #be9c43;
+    font-size: 20px;
+
+}
+
+.Footer-Icon{
+    color: grey  !important;
+    font-size: 20px  !important;
+    padding-left: 50px;
+}
+
+
+
+
+
+

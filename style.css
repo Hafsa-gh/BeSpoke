@@ -1,0 +1,518 @@
+@font-face {
+    font-family: 'Risque';
+    src: url('Fonts/Risque-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montez';
+    src: url('Fonts/Montez-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Risque;
+}
+
+body {
+    background: url(Images/Events-Images/Body\ Background\ Image.jpg);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+/* Logo Navbar Section */
+
+.LogoNavbar {
+    background-color: #000  !important;
+}
+
+
+/* Navbar Section */
+
+
+.navbar {
+    background-color: #000;
+    /* background-color: #cc9e2b; */
+    opacity: 0.9;
+}
+
+.nav-link{
+    color: #be9c43  !important;
+    /* color: #000  !important; */
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: #daa726 !important;
+    font-size: 20px;
+    outline: 1px solid #daa726;
+    /* outline: 1px solid #000; */
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border-radius: 16px 0px  !important;
+    padding: 5px;
+    border-bottom: 8px solid #be9c43;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block  !important;
+}
+
+.dropdown-item {
+    color: #be9c43  !important;
+    font-size: 20px;
+}
+
+.dropdown-item:hover {
+    background-color: black  !important;
+    color: grey  !important;
+}
+
+.dropdown-menu a:focus {
+    background-color: black  !important;
+}
+
+
+/* Carousel Section */
+
+
+.carousel-indicators li {
+    width: 20px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carouselImage {
+    filter: grayscale(30%);
+}
+
+.carousel-caption {
+    margin-bottom: 7%;
+}
+
+.carousel-caption h1{
+    font-family: 'Montez';
+    font-weight: 600;
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: rgb(236, 232, 232);
+}
+
+.carousel-caption p{
+    color: rgb(236, 232, 232);
+    font-size: 30px  !important;
+}
+
+.carousel-item img{
+    height: 700px;
+}
+
+@media only screen and (max-width:770px){
+    .carousel-caption h1{
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .carousel-item img{
+        height: 400px;
+    }
+
+    .carousel-caption h1{
+        font-size: 40px;
+    }
+
+    .carousel-caption p{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .carousel-item img{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .carousel-item img{
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .carousel-item img{
+        height: 160px;
+    }
+}
+
+
+/* Welcome Section */
+
+.welcomeSection{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.welcome-heading h1 {
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .welcome-heading h1 {
+        font-size: 45px;
+    }
+}
+
+.welcome-heading span {
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.pulse-img {
+    background-color: #a7752b;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulse-div {
+    display: flex;
+    justify-content: center;
+}
+
+.pulseOne:hover .pulse-img, 
+.pulseTwo:hover .pulse-img, 
+.pulseThree:hover .pulse-img{
+    transform: rotate(45deg);
+}
+
+.pulseOne:hover .pulse-img i,
+.pulseTwo:hover .pulse-img i, 
+.pulseThree:hover .pulse-img i{
+    transform: rotate(-45deg);
+}
+
+.pulse-text h3{
+    color: whitesmoke;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.borderBottom {
+    border-bottom: 3px solid 	#be9c43;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.pulse-text p{
+    color: rgb(179, 179, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+
+/* Testimonials Section */
+
+.testimonialSection{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-heading h1 {
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .testimonial-heading h1 {
+        font-size: 45px;
+    }
+}
+
+.testimonial-heading span {
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.carou-inner {
+    width: 500px;
+    height: auto;
+    margin: 50px;
+}
+
+.carousel-item p{
+      font-size: 19px;
+      color: rgb(179, 179, 179);
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-item h2{
+    color: rgb(179, 179, 179);
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.carousel-item i{
+     font-weight: 800;
+     color: grey;
+     font-size: 0px;
+}
+
+@media only screen and (max-width:1130px){
+    .carou-inner {
+        width: 400px;
+        height: auto;
+    }
+
+    .testimonialImage {
+        width: 500px;
+    }
+
+    .carousel-item {
+        padding-bottom: 15%;
+    }
+}
+
+@media only screen and (max-width:695px){
+    .carou-inner {
+        width: 350px;
+        height: auto;
+    }
+
+    .testimonialImage {
+        width: 400px;
+    }
+
+    .carousel-item i {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .carou-inner {
+        width: 280px;
+        height: auto;
+    }
+
+    .testimonialImage {
+        width: 290px;
+    }
+
+    .carousel-item p {
+        font-size: 15px;
+    }
+}
+
+
+/* Gallery Section */
+
+
+.gallerySection{
+   margin-top: 10%;
+   margin-bottom: 10%;
+ }
+
+.gallery-heading h1{
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .gallery-heading h1 {
+        font-size: 45px;
+    }
+}
+
+.gallery-heading span{
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    background: #000;
+}
+
+@media only screen and (max-width:600px){
+    .swiper-slide {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .swiper-slide {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+/* Call Us Section  */
+
+
+.CallUsSection {
+    margin-top: 10%;
+}
+
+.CallUsSection-Heading h1{
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .CallUsSection-Heading h1 {
+        font-size: 45px;
+    }
+}
+
+.CallUsSection-Heading span{
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.CallUsSection-Content {
+    background: url(images/Events-Images/139145-guitar-rose-closeup-blurred-748x421.jpg);
+    width: 55%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.CallUsInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CallUsSection-Icon i {
+    font-size: 250px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.CallUsSection-Text {
+    background-color: #000;
+    opacity: 0.7;
+    padding: 25px;
+    text-align: justify;
+}
+
+.CallUsSection-Text i {
+    color: green;
+}
+
+.CallUsSection-Text h6{
+    color: #fff;
+    font-weight: 500;
+}
+
+.CallUsSection-Text h4{
+    color: #fff;
+    font-weight: 500;
+}
+
+.CallUsSection-Text h4{
+    color: #fff;
+    font-weight: 500;
+}
+
+.CallUsSection-Text h5{
+    color: #fff;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width:990px){
+    .CallUsSection-Content {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .CallUsSection-Content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .CallUsSection-Text {
+        background-color: #000;
+        opacity: 0.7;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .CallUsSection-Text h6, 
+    .CallUsSection-Text h4, 
+    .CallUsSection-Text h5{
+        font-size: 16px;
+    }
+}
+
+
+/* Footer Section */
+
+.FooterSection{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.FooterSection-Text p{
+    color: #be9c43;
+    font-size: 20px;
+
+}
+
+.Footer-Icon{
+    color: grey  !important;
+    font-size: 20px  !important;
+    padding-left: 50px;
+}
+
+

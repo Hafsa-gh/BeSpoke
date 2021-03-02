@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Risque';
+    src: url('Fonts/Risque-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montez';
+    src: url('Fonts/Montez-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Risque;
+}
+
+body {
+    background: url(Images/Events-Images/Body\ Background\ Image.jpg);
+}
+
+
+/* Logo Navbar Section */
+
+.LogoNavbar {
+    background-color: #000  !important;
+}
+
+
+/* Navbar Section */
+
+
+.navbar {
+    background-color: #000;
+    /* background-color: #cc9e2b; */
+    opacity: 0.9;
+}
+
+.nav-link{
+    color: #be9c43  !important;
+    /* color: #000  !important; */
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    color: #daa726 !important;
+    font-size: 20px;
+    outline: 1px solid #daa726;
+    /* outline: 1px solid #000; */
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border-radius: 16px 0px  !important;
+    padding: 5px;
+    border-bottom: 8px solid #be9c43;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block  !important;
+}
+
+.dropdown-item {
+    color: #be9c43  !important;
+    font-size: 20px;
+}
+
+.dropdown-item:hover {
+    background-color: black  !important;
+    color: grey  !important;
+}
+
+.dropdown-menu a:focus {
+    background-color: black  !important;
+}
+
+/* .container {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+/* Story Section */
+
+
+.storySection {
+    margin-top: 2%;
+}
+
+.storySection-heading h1{
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .storySection-heading h1 {
+        font-size: 45px;
+    }
+}
+
+.storySection-heading span{
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.storySection-content {
+    margin: 0 auto;
+    border: none;
+}
+
+.card-img {
+    border-radius: 0px;
+}
+
+.storySection-Text {
+    width: 35%;
+    height: auto;
+    background-color: aliceblue;
+    opacity: 0.9;
+    padding: 30px 30px 0px 30px  !important;
+    border-bottom: 12px solid #be9c43;
+    border-top: 12px solid #be9c43;
+}
+
+.storySection-Text h6{
+    color: #be9c43;
+    letter-spacing: 5px;
+}
+
+.storySection-Text h2{
+    color: #be9c43;
+    letter-spacing: 2px;
+}
+
+.storySection-Text p{
+    color: #000;
+    font-size: 19px  !important;
+    font-family: Arial, Helvetica, sans-serif  !important;
+    text-align: justify;
+}
+
+@media only screen and (max-width:955px){
+    .storySection-Text {
+        width: 100%;
+        height: auto;
+    }
+
+    .storyImage {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Mission & Vision Section */
+
+
+.missionSection {
+    margin-top: 10%;
+}
+
+.missionSection-heading h1{
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .missionSection-heading h1 {
+        font-size: 45px;
+    }
+}
+
+.missionSection-heading span{
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.missionSection-content {
+    margin: 0 auto;
+    border: none;
+}
+
+.card-img {
+    border-radius: 0px;
+}
+
+.missionSection-Text {
+    width: 35%;
+    height: auto;
+    background-color: aliceblue;
+    opacity: 0.9;
+    padding: 30px 30px 0px 30px  !important;
+    border-bottom: 12px solid #be9c43;
+    border-top: 12px solid #be9c43;
+}
+
+.missionSection-Text h6{
+    color: #be9c43;
+    letter-spacing: 5px;
+}
+
+.missionSection-Text h2{
+    color: #be9c43;
+    letter-spacing: 2px;
+}
+
+.missionSection-Text p{
+    color: #000;
+    font-size: 19px  !important;
+    font-family: Arial, Helvetica, sans-serif  !important;
+    text-align: justify;
+}
+
+@media only screen and (max-width:955px){
+    .missionSection-Text {
+        width: 100%;
+        height: auto;
+    }
+
+    .MissionImage {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+/* Meet Our Team Section */
+
+
+.meetOurTeamSection {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.meetOurTeamSection-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.meetOurTeamSection-heading h1{
+    font-family: 'Montez';
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 6px;
+    color: rgb(236, 232, 232);
+}
+
+@media only screen and (max-width:540px){
+    .meetOurTeam h1 {
+        font-size: 45px;
+    }
+}
+
+.meetOurTeamSection-heading span{
+    font-family: 'Montez';
+    color: 	#be9c43;
+}
+
+.imageText h2, .imageText h6{
+    color: rgb(179, 179, 179);
+}
+  
+/* Transition property for transformation of images */
+.img-hover-zoom img {
+    transition: transform .8s ease;
+}
+  
+/* Transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* The Image container */
+.img-hover-zoom {
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+
+
+/* Footer Section */
+
+.FooterSection{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.FooterSection-Text p{
+    color: #be9c43;
+    font-size: 20px;
+
+}
+
+.Footer-Icon{
+    color: grey  !important;
+    font-size: 20px  !important;
+    padding-left: 50px;
+}
+
+
